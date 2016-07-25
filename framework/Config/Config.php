@@ -12,18 +12,7 @@ ini_set('display_errors', 1);
 class Config
 {
     private static $configFile = array();
-    //protected static $instance ;
 
-
-    /*  public static function getInstance()
-      {
-          if (!isset(self::$instance)) {
-              return new self;
-          } else {
-              return self::$instance;
-          }
-      }
-  */
     public static function registration($name, $path)
     {
         $newConfigFile = require_once($path);
@@ -40,10 +29,6 @@ class Config
 
     }
 }
-
-//Config::setParams('main', $main);
-//Config::setParams('db', $db);
-//Config::registration('main', 'Application/configs/conf.conf.main.php');
 
 
 

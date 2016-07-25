@@ -100,7 +100,5 @@ session_id = ?");
         )
 _SQL_;
         $this->dbh->exec($sql);
-
     }
-
 }

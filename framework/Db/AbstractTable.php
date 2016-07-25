@@ -123,31 +123,6 @@ class AbstractTable extends DB
     }
 
 
-
-    /*
-        public function refresh()
-        {
-            if ($record = $this->findAll()) {
-                $this->params;
-                for ($i = 0; $i < count($record); $i++) {
-                    foreach ($record[$i] as $column => $value) {
-                        if (property_exists($this, $column))
-                            $this->$column = $value;
-                        else {
-                            $this->params[$column][] = $value;
-                        }
-
-                    }
-
-                }
-                return true;
-            } else
-                return false;
-
-        }
-
-    */
-
     /**
      * Example: findWhere->(array('id','user_name'),(id=2,sum<200),'and')
      * @return array of objects
@@ -172,7 +147,6 @@ class AbstractTable extends DB
             }
             array_push($classArray, $class);
         }
-//        var_dump($classArray);
 
         return $classArray;
     }

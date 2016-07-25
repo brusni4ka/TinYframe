@@ -1,8 +1,5 @@
 <?php
 namespace HappyCake\Db;
-
-use HappyCake\Db\DB;
-
 /**
  * Created by PhpStorm.
  * User: kate

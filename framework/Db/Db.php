@@ -7,9 +7,6 @@ use HappyCake\Config\Config;
 
 //PDO::ATTR_ERRMODE: Режим сообщений об ошибках.
 //PDO::ERRMODE_EXCEPTION: Выбрасывать исключения.
-ini_set('display_errors', 1);
-
-//require_once 'Config.php';
 
 class DB
 {
@@ -41,7 +38,7 @@ class DB
     }
 
     /**
-     * Устанавливает соединение с базой
+     * Db connection
      */
 
 
@@ -55,7 +52,7 @@ class DB
     }
 
     /**
-     * Прекращает соединение с базой
+     * Stop connection
      */
 
     public function stopConnect()
@@ -73,16 +70,11 @@ class DB
     }
 
 
-    /**
-     * установка CREATE
-     * Пример:
-     */
-
 
     /** insert/update
-     * установка INSERT
+     *  INSERT
      *
-     * Пример:
+     * Example:
      * $this->db->insert('Users',array('id','user_name'), array('11','Sah'));
      */
 
